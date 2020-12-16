@@ -1,6 +1,6 @@
 ## Movies App with React
 
-A movie database with search function. Part of my journey learning React, heavily inspired by this tutorial: https://www.youtube.com/watch?v=sZ0bZGfg_m4
+A movie database with a search function. This is part of my journey learning React, heavily inspired by this tutorial: https://www.youtube.com/watch?v=sZ0bZGfg_m4
 
 
 This includes:
@@ -27,7 +27,7 @@ npm install
 After installing the necessary dependency packages, execute:
 
 ```shell
-npm run dev
+npm run start
 ```
 
 Ready to run the project (under development environment)
