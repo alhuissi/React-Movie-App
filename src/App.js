@@ -43,7 +43,7 @@ function App() {
   return (
     <>
     <header>
-      <div> <img src={logo} height="50px" className="logo"></img></div>
+      <div> <a href="www.thedeval.com" target="_blank"> <img src={logo} height="50px" className="logo"> </img> </a></div>
         <div className="title">Movie Database</div>
         <form onSubmit={handleOnSubmit}>
           <input type="text" placeholder="Search..." className="search" value={searchTerm} onChange={handleOnChange} />
