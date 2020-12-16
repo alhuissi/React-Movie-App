@@ -15,8 +15,8 @@ function App() {
     getMovies(FEATURED_API);
   }, []);
 
-  const getMovies = (API) => {
-    fetch(API).then((res) => res.json())
+  const getMovies = async (API) => {
+    await fetch(API).then((res) => res.json())
     .then((data) => {
       console.log(data.results);
       setMovies(data.results);
@@ -47,7 +47,7 @@ function App() {
     </header>
 
     <div className="movie-container" >
-      {movies.length > 0 && movies.map((movie) => (
+      { movies.map((movie) => (
         <Movie key={movie.id} {...movie}  />
       ))}
     </div>

@@ -45,8 +45,3 @@ npm run build
 ```
 The generated static files are saved in the ./dist directory
 
-
-
-
-
-## Deployment with Heroku
