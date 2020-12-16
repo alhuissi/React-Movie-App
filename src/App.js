@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Movie from './components/Movie';
+import logo from './logo.png';
 require('dotenv').config()
 
 //const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "04c35731a5ee918f014970082a0088b1";
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key="+API_KEY+"&page=1";
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key="+API_KEY+"&query=";
@@ -10,6 +12,7 @@ const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key="+API_KEY
 function App() {
   const [ movies, setMovies ] = useState([]);
   const [ searchTerm, setSearchTerm] = useState('');
+  console.log(logo);
 
   useEffect(async () => {
     getMovies(FEATURED_API);
@@ -40,6 +43,7 @@ function App() {
   return (
     <>
     <header>
+      <div> <img src={logo} height="50px" className="logo"></img></div>
         <div className="title">Movie Database</div>
         <form onSubmit={handleOnSubmit}>
           <input type="text" placeholder="Search..." className="search" value={searchTerm} onChange={handleOnChange} />
