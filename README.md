@@ -33,9 +33,6 @@ npm run start
 Ready to run the project (under development environment)
 
 
-
-
-
 ## Build
 
 If you need to pack, execute:
@@ -45,3 +42,5 @@ npm run build
 ```
 The generated static files are saved in the ./dist directory
 
+
+API: https://www.themoviedb.org/documentation/api
